@@ -28,6 +28,9 @@ let counter = setInterval(() => {
     `${Math.floor((dataDiff % (1000 * 60 * 60)) / 1000 / 60)} M`
   );
   $(".sec span").text(`${Math.floor((dataDiff % (1000 * 60)) / 1000)} s`);
+  if (dataDiff < 0) {
+    clearInterval(counter);
+  }
 }, 1000);
 
 // count
