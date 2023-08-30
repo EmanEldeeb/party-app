@@ -22,22 +22,25 @@ a {
   justify-content: center;
   align-items: center;
 }
+.home .home-txt {
+  width: 100%;
+}
 .home .side_control {
   text-align: left;
+  padding-left: 20px;
 }
 .side-menu {
   position: fixed;
-  left: 0;
+  left: -300px;
   top: 0;
-  width: 45%;
+  width: 250px;
+  transition: 0.8s;
 }
 
 .side-menu .move {
   height: 100vh;
   padding: 30px 30px;
-  width: 75%;
   background-color: black;
-  display: none;
 }
 
 .side-menu .move .close {
