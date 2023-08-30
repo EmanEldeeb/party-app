@@ -1,0 +1,110 @@
+:root {
+  --identity-color: rgba(214, 46, 51, 0.6);
+}
+
+ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+a {
+  text-decoration: none;
+}
+
+.home {
+  height: 80vh;
+  background: linear-gradient(var(--identity-color), var(--identity-color)),
+    url(../image/events-heavenly-header.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .side_control {
+  text-align: left;
+}
+.side-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 45%;
+}
+
+.side-menu .move {
+  height: 100vh;
+  padding: 30px 30px;
+  width: 75%;
+  background-color: black;
+  display: none;
+}
+
+.side-menu .move .close {
+  text-align: right;
+  color: white;
+  font-size: 20px;
+}
+.side-menu .move ul li {
+  padding: 20px 0;
+  transition: 0.4s;
+}
+.side-menu .move ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.side-menu .move ul li a:hover {
+  color: brown;
+}
+
+/* ------------------------------------------singers------------------------------------------ */
+.singers h3 {
+  background-color: var(--identity-color);
+  padding: 25px;
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.singers h3 + .sing-info {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ccc;
+  display: none;
+}
+/*------------------------------------------------- date---------------------------------------- */
+.date {
+  background: linear-gradient(var(--identity-color), var(--identity-color)),
+    url(../image/invitation-2508607__340.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.date .date_box {
+  padding: 50px;
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+}
+
+/* -----------------------------contact us---------------------------- */
+.media li {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.media li:hover {
+  background-color: var(--identity-color);
+  color: white;
+}
+/* ----------------------mail us---------------- */
+
+.mail-us textarea {
+  min-height: 200px !important;
+}
